@@ -1,0 +1,87 @@
+.table-container {
+    position: relative;
+    left: 10vmin;
+    width: 700pt;
+    background: #fff;
+    border-radius: 10pt;
+    padding: 18pt;
+    margin: 24pt auto;
+    max-width: 90%;
+}
+
+.table-controls {
+    margin-bottom: 12pt;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.table-controls select {
+    margin-left: 6pt;
+    padding: 3pt 6pt;
+    border-radius: 3pt;
+    border: 1pt solid #cbd5e1;
+}
+
+.custom-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 12pt;
+}
+
+.custom-table th,
+.custom-table td {
+    padding: 7.5pt 9pt;
+    text-align: left;
+    border-bottom: 1pt solid #e2e8f0;
+}
+
+.custom-table th {
+    background: #ffffff;
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.2s;
+}
+
+.custom-table th:hover {
+    background: #e0e7ef;
+}
+
+.no-data {
+    text-align: center;
+    color: #888;
+    padding: 18pt 0;
+}
+
+.activo {
+    color: #16a34a;
+    font-weight: bold;
+}
+
+.inactivo {
+    color: #dc2626;
+    font-weight: bold;
+}
+
+.table-pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12pt;
+}
+
+.table-pagination button {
+    padding: 4.5pt 12pt;
+    border: none;
+    border-radius: 3pt;
+    background: #334155;
+    color: #fff;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.table-pagination button:disabled {
+    background: #cbd5e1;
+    color: #64748b;
+    cursor: not-allowed;
+}
